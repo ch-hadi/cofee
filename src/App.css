@@ -70,3 +70,9 @@
 .review-screen-Container .MuiGrid-container {
   justify-content: space-evenly;
 }
+.card-content .MuiTypography-gutterBottom{
+  margin: 0% !important;
+}
+.card-content .MuiCardContent-root{
+  padding: 2px 16px 0px 16px;
+}

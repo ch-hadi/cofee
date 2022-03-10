@@ -8,8 +8,10 @@ import Typography from "@material-ui/core/Typography";
 import InputBase from "@material-ui/core/InputBase";
 import { alpha, makeStyles } from "@material-ui/core/styles";
 import SearchIcon from "@material-ui/icons/Search";
-import venue from './../../Data/vanue/venue.json'
+// import venue from './../../Data/vanue/venue.json'
 import Venue from "../Venue/Venue";
+
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -87,7 +89,6 @@ const Search = (props) => {
       setFound(c);
     }
   };
-  console.log(Found);
   return (
     <div className="search-screen-Container">
        
@@ -116,6 +117,7 @@ const Search = (props) => {
         </Toolbar>
       </AppBar>
       <Venue/>
+      
       <Grid container>
         {item == ""
           ? data.map((i) => {

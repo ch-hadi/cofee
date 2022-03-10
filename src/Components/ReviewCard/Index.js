@@ -67,11 +67,11 @@ export default function CofeeReviewCard(props) {
        
         title={props.name}
         subheader={props.time}
-        action={
-            <IconButton aria-label="settings" onClick={()=>navigate(`map-location/${props}`)} >
-              <LocationOnIcon />
-            </IconButton>
-          }
+        // action={
+        //     <IconButton aria-label="settings" onClick={()=>navigate(`map-location/${props}`)} >
+        //       <LocationOnIcon />
+        //     </IconButton>
+        //   }
       />
       
       <CardMedia
