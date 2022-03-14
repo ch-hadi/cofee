@@ -13,6 +13,7 @@ import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
+import SimpleModel from "../Models/SimpleModel";
 
 
 const useStyles = makeStyles({
@@ -124,7 +125,8 @@ export default function VenueCard(props) {
                 </Select>
               </FormControl>
             {/* </Box> */}
-            <Button variant="outlined" className={classes.btn}>Submit</Button>
+            {/* <Button variant="outlined" className={classes.btn}>Submit</Button> */}
+            <SimpleModel/>
           </Typography>
         </CardContent>
       </CardActionArea>

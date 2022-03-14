@@ -4,8 +4,8 @@ import Mapp from "../MapScreen/Mapp";
 import Search from "../Screens/SearchPage/Search";
 import ReviewScreen from "../Screens/ReviewScreen/ReviewScreen";
 import { makeStyles } from '@material-ui/core/styles';
-import Venue from "../Screens/Venue/Venue";
-
+// import Venue from "../Screens/Venue/Venue";
+import NotFoundScreen from "../Screens/NotFound/NotFoundScreen";
 
 
 const useStyles = makeStyles({
@@ -28,10 +28,11 @@ export const AllRoutes = () => {
     <div className="App">
        
       <Routes>
-      <Route path="/" excet element={<Venue />} />
-        <Route path="/search-cofee" element={<Search />} />
+      {/* <Route path="/" excet element={<Venue />} /> */}
+        <Route path="/search-cofee" exact element={<Search />} />
         <Route path="/map-location" element={<Mapp />} />
         <Route path="/reviews" element={<ReviewScreen />} />
+        <Route path="*" element={<NotFoundScreen/>} />
       </Routes>
 
      
