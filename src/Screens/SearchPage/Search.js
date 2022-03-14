@@ -11,8 +11,6 @@ import SearchIcon from "@material-ui/icons/Search";
 // import venue from './../../Data/vanue/venue.json'
 import Venue from "../Venue/Venue";
 
-
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -78,6 +76,7 @@ const Search = (props) => {
   const [item, setItem] = useState("");
   const [Found, setFound] = useState([]);
 
+  
   const handleChange = (e) => {
     if (e.key === "Enter") {
       const c = data.filter((i) => {
@@ -91,7 +90,6 @@ const Search = (props) => {
   };
   return (
     <div className="search-screen-Container">
-       
       <AppBar position="static">
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
@@ -116,8 +114,8 @@ const Search = (props) => {
           </div>
         </Toolbar>
       </AppBar>
-      <Venue/>
-      
+      <Venue />
+
       <Grid container>
         {item == ""
           ? data.map((i) => {
